@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "83414341-625c-4215-a862-56a0eaf2c090",
+		"name": "InsuredMine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24108844"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/account",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"accountName\": \"Anubhav\",\r\n        \"accountType\": \"Commercial1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/account",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"accountName\": \"Anubhav152\",\r\n        \"accountType\": \"Commercial11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/account/635b4defc92973376166aa2d",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"account",
+								"635b4defc92973376166aa2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/account/635a95ebd6e6d5892e892578",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"account",
+								"635a95ebd6e6d5892e892578"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "635a94b7e97edddfa364478e",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Policy",
+			"item": [
+				{
+					"name": "policy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/policy",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"policyNumber\": \"YEEX9MOIBU7X1\",\r\n        \"policyStartDate\": \"2018-11-02T00:00:00.000Z\",\r\n        \"policyEndDate\": \"2019-11-02T00:00:00.000Z\",\r\n        \"policyMode\": \"12\",\r\n        \"policyType\": \"Single\",\r\n        \"producer\": \"Brandie Placencia\",\r\n        \"premiumAmount\": \"1180.83\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/policy",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"policyNumber\": \"YEEX9MOIBU7X1111\",\r\n        \"policyStartDate\": \"2018-11-02T00:00:00.000Z\",\r\n        \"policyEndDate\": \"2019-11-02T00:00:00.000Z\",\r\n        \"policyMode\": \"121\",\r\n        \"policyType\": \"Single\",\r\n        \"producer\": \"Brandie Placencia\",\r\n        \"premiumAmount\": \"1180.83\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/policy/635b4f6cc92973376166aa32",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"policy",
+								"635b4f6cc92973376166aa32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "policy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/policy/635b4bedc92973376166aa26",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"policy",
+								"635b4bedc92973376166aa26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"firstName\": \"Anubhav\",\r\n        \"dob\": \"1960-02-11T00:00:00.000Z\",\r\n        \"address\": \"170 MATTHIAS CT\",\r\n        \"phoneNumber\": \"8677356559\",\r\n        \"state\": \"NC\",\r\n        \"city\": \"MOCKSVILLE\",\r\n        \"zipCode\": \"27028\",\r\n        \"email\": \"madler@yahoo.ca\",\r\n        \"gender\": \"Male\",\r\n        \"userType\": \"Active Client\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"firstName\": \"Anubhav1\",\r\n        \"dob\": \"1960-02-11T00:00:00.000Z\",\r\n        \"address\": \"170 MATTHIAS CT\",\r\n        \"phoneNumber\": \"8677356559\",\r\n        \"state\": \"NC\",\r\n        \"city\": \"MOCKSVILLE\",\r\n        \"zipCode\": \"27028\",\r\n        \"email\": \"madler@yahoo.ca\",\r\n        \"gender\": \"Male\",\r\n        \"userType\": \"Active Client\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/635b5076c92973376166aa37",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"635b5076c92973376166aa37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/635b5076c92973376166aa37",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"635b5076c92973376166aa37"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
